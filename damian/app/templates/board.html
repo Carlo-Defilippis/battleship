@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table{
+                border:1px solid #000000;
+            }
+            table td{
+                border:1px solid #000000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>{{ title }}</h1>
+        <h2>Enemy Board</h2>
+        <table>
+            <tr>
+                <th></th>
+                <th>01</th>
+                <th>02</th>
+                <th>03</th>
+                <th>04</th>
+                <th>05</th>
+                <th>06</th>
+                <th>07</th>
+                <th>08</th>
+                <th>09</th>
+                <th>10</th>
+            </tr>
+
+        {% for pos in e_board %}
+            <tr>
+                <th>{{ pos[0] }}</th>
+                <td>{{ pos[1] }}</td>
+                <td>{{ pos[2] }}</td>
+                <td>{{ pos[3] }}</td>
+                <td>{{ pos[4] }}</td>
+                <td>{{ pos[5] }}</td>
+                <td>{{ pos[6] }}</td>
+                <td>{{ pos[7] }}</td>
+                <td>{{ pos[8] }}</td>
+                <td>{{ pos[9] }}</td>
+                <td>{{ pos[10] }}</td>
+            </tr>
+        {% endfor %}
+
+        </table>
+        <h2>My Board</h2>
+        <table>
+            <tr>
+                <th></th>
+                <th>01</th>
+                <th>02</th>
+                <th>03</th>
+                <th>04</th>
+                <th>05</th>
+                <th>06</th>
+                <th>07</th>
+                <th>08</th>
+                <th>09</th>
+                <th>10</th>
+            </tr>
+
+        {% for pos in m_board %}
+            <tr>
+                <th>{{ pos[0] }}</th>
+                <td>{{ pos[1] }}</td>
+                <td>{{ pos[2] }}</td>
+                <td>{{ pos[3] }}</td>
+                <td>{{ pos[4] }}</td>
+                <td>{{ pos[5] }}</td>
+                <td>{{ pos[6] }}</td>
+                <td>{{ pos[7] }}</td>
+                <td>{{ pos[8] }}</td>
+                <td>{{ pos[9] }}</td>
+                <td>{{ pos[10] }}</td>
+            </tr>
+        {% endfor %}
+        </table>
+
+    </body>
+</html>
