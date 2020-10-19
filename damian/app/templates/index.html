@@ -1,8 +1,165 @@
+<!DOCTYPE>
 <html>
     <head>
+        <style>
+           table{
+                border:1px solid #000000;
+            } 
+            table td{
+                border:1px solid #000000;
+            }
+        </style>
         <title>{{ title }}</title>
     </head>
     <body>
         <h1>Hello, {{ user.username }}</h1>
+        <form name="board" action="/index" method="post">
+        <table>
+            <tr>
+                <th></th>
+                <th>01</th>
+                <th>02</th>
+                <th>03</th>
+                <th>04</th>
+                <th>05</th>
+                <th>06</th>
+                <th>07</th>
+                <th>08</th>
+                <th>09</th>
+                <th>10</th>
+            </tr>
+            <tr>
+                <th>A</th>
+                <th><input type="checkbox" id="a1" name="a1"></th>
+                <th><input type="checkbox" id="a2" name="a2"></th>
+                <th><input type="checkbox" id="a3" name="a3"></th>
+                <th><input type="checkbox" id="a4" name="a4"></th>
+                <th><input type="checkbox" id="a5" name="a5"></th>
+                <th><input type="checkbox" id="a6" name="a6"></th>
+                <th><input type="checkbox" id="a7" name="a7"></th>
+                <th><input type="checkbox" id="a8" name="a8"></th>
+                <th><input type="checkbox" id="a9" name="a9"></th>
+                <th><input type="checkbox" id="a10" name="a10"></th>
+            </tr>
+            <tr>
+                <th>B</th>
+                <th><input type="checkbox" id="b1" name="b1"></th>
+                <th><input type="checkbox" id="b2" name="b2"></th>
+                <th><input type="checkbox" id="b3" name="b3"></th>
+                <th><input type="checkbox" id="b4" name="b4"></th>
+                <th><input type="checkbox" id="b5" name="b5"></th>
+                <th><input type="checkbox" id="b6" name="b6"></th>
+                <th><input type="checkbox" id="b7" name="b7"></th>
+                <th><input type="checkbox" id="b8" name="b8"></th>
+                <th><input type="checkbox" id="b9" name="b9"></th>
+                <th><input type="checkbox" id="b10" name="b10"></th>
+            </tr>
+            <tr>
+                <th>C</th>
+                <th><input type="checkbox" id="c1" name="c1"></th>
+                <th><input type="checkbox" id="c2" name="c2"></th>
+                <th><input type="checkbox" id="c3" name="c3"></th>
+                <th><input type="checkbox" id="c4" name="c4"></th>
+                <th><input type="checkbox" id="c5" name="c5"></th>
+                <th><input type="checkbox" id="c6" name="c6"></th>
+                <th><input type="checkbox" id="c7" name="c7"></th>
+                <th><input type="checkbox" id="c8" name="c8"></th>
+                <th><input type="checkbox" id="c9" name="c9"></th>
+                <th><input type="checkbox" id="c10" name="c10"></th>
+            </tr>
+            <tr>
+                <th>D</th>
+                <th><input type="checkbox" id="d1" name="d1"></th>
+                <th><input type="checkbox" id="d2" name="d2"></th>
+                <th><input type="checkbox" id="d3" name="d3"></th>
+                <th><input type="checkbox" id="d4" name="d4"></th>
+                <th><input type="checkbox" id="d5" name="d5"></th>
+                <th><input type="checkbox" id="d6" name="d6"></th>
+                <th><input type="checkbox" id="d7" name="d7"></th>
+                <th><input type="checkbox" id="d8" name="d8"></th>
+                <th><input type="checkbox" id="d9" name="d9"></th>
+                <th><input type="checkbox" id="d10" name="d10"></th>
+            </tr>
+            <tr>
+                <th>E</th>
+                <th><input type="checkbox" id="e1" name="e1"></th>
+                <th><input type="checkbox" id="e2" name="e2"></th>
+                <th><input type="checkbox" id="e3" name="e3"></th>
+                <th><input type="checkbox" id="e4" name="e4"></th>
+                <th><input type="checkbox" id="e5" name="e5"></th>
+                <th><input type="checkbox" id="e6" name="e6"></th>
+                <th><input type="checkbox" id="e7" name="e7"></th>
+                <th><input type="checkbox" id="e8" name="e8"></th>
+                <th><input type="checkbox" id="e9" name="e9"></th>
+                <th><input type="checkbox" id="e10" name="e10"></th>
+            </tr>
+            <tr>
+                <th>F</th>
+                <th><input type="checkbox" id="f1" name="f1"></th>
+                <th><input type="checkbox" id="f2" name="f2"></th>
+                <th><input type="checkbox" id="f3" name="f3"></th>
+                <th><input type="checkbox" id="f4" name="f4"></th>
+                <th><input type="checkbox" id="f5" name="f5"></th>
+                <th><input type="checkbox" id="f6" name="f6"></th>
+                <th><input type="checkbox" id="f7" name="f7"></th>
+                <th><input type="checkbox" id="f8" name="f8"></th>
+                <th><input type="checkbox" id="f9" name="f9"></th>
+                <th><input type="checkbox" id="f10" name="f10"></th>
+            </tr>
+            <tr>
+                <th>G</th>
+                <th><input type="checkbox" id="g1" name="g1"></th>
+                <th><input type="checkbox" id="g2" name="g2"></th>
+                <th><input type="checkbox" id="g3" name="g3"></th>
+                <th><input type="checkbox" id="g4" name="g4"></th>
+                <th><input type="checkbox" id="g5" name="g5"></th>
+                <th><input type="checkbox" id="g6" name="g6"></th>
+                <th><input type="checkbox" id="g7" name="g7"></th>
+                <th><input type="checkbox" id="g8" name="g8"></th>
+                <th><input type="checkbox" id="g9" name="g9"></th>
+                <th><input type="checkbox" id="g10" name="g10"></th>
+            </tr>
+            <tr>
+                <th>H</th>
+                <th><input type="checkbox" id="h1" name="h1"></th>
+                <th><input type="checkbox" id="h2" name="h2"></th>
+                <th><input type="checkbox" id="h3" name="h3"></th>
+                <th><input type="checkbox" id="h4" name="h4"></th>
+                <th><input type="checkbox" id="h5" name="h5"></th>
+                <th><input type="checkbox" id="h6" name="h6"></th>
+                <th><input type="checkbox" id="h7" name="h7"></th>
+                <th><input type="checkbox" id="h8" name="h8"></th>
+                <th><input type="checkbox" id="h9" name="h9"></th>
+                <th><input type="checkbox" id="h10" name="h10"></th>
+            </tr>
+            <tr>
+                <th>I</th>
+                <th><input type="checkbox" id="i1" name="i1"></th>
+                <th><input type="checkbox" id="i2" name="i2"></th>
+                <th><input type="checkbox" id="i3" name="i3"></th>
+                <th><input type="checkbox" id="i4" name="i4"></th>
+                <th><input type="checkbox" id="i5" name="i5"></th>
+                <th><input type="checkbox" id="i6" name="i6"></th>
+                <th><input type="checkbox" id="i7" name="i7"></th>
+                <th><input type="checkbox" id="i8" name="i8"></th>
+                <th><input type="checkbox" id="i9" name="i9"></th>
+                <th><input type="checkbox" id="i10" name="i10"></th>
+            </tr>
+            <tr>
+                <th>J</th>
+                <th><input type="checkbox" id="j1" name="j1"></th>
+                <th><input type="checkbox" id="j2" name="j2"></th>
+                <th><input type="checkbox" id="j3" name="j3"></th>
+                <th><input type="checkbox" id="j4" name="j4"></th>
+                <th><input type="checkbox" id="j5" name="j5"></th>
+                <th><input type="checkbox" id="j6" name="j6"></th>
+                <th><input type="checkbox" id="j7" name="j7"></th>
+                <th><input type="checkbox" id="j8" name="j8"></th>
+                <th><input type="checkbox" id="j9" name="j9"></th>
+                <th><input type="checkbox" id="j10" name="j10"></th>
+            </tr>
+        </table>
+            <input type="submit" value="Submit">
+        </form>
     </body>
 </html>
