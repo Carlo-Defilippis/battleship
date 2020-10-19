@@ -1,4 +1,4 @@
 #!/bin/bash
 
-export FLASK_APP=battle_ship.py
+export FLASK_APP=battleship.py
 flask run
